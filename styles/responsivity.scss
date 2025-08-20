@@ -1,0 +1,282 @@
+@import '../styles/variables.scss';
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex !important;
+        padding: 1dvh 1dvh !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile_btn {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .nav-list {
+        display: none !important;
+    }
+}
+
+@media (width >=1024px) {
+
+    .hero {
+
+        h1 {
+            font-size: 3.5rem !important;
+        }
+
+        .hero-button {
+            display: block;
+
+            .tratamento-btn {
+                background: $gradientHealing;
+                color: $destructiveForeground;
+                width: 40dvh;
+                height: 8dvh;
+                border: none;
+                border-radius: 1dvh;
+                transition: transform .9s;
+                margin-right: 2dvh;
+            }
+
+            .tratamento-btn:hover {
+                transform: scale(1.1);
+            }
+
+            .consulta-button {
+                background-color: $secondary;
+                color: $primary;
+                font-weight: 600;
+                height: 8dvh;
+                width: 30dvh;
+                border: 1px solid $healingPrimary;
+                border-radius: 1dvh;
+                transition: background .9s, color .9s;
+            }
+
+            .consulta-button:hover {
+                background: $gradientHealing;
+                color: $destructiveForeground;
+            }
+        }
+    }
+}
+
+@media (width >=1024px) {
+
+    .tratamentos-title {
+        font-size: 3rem !important;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        max-width: 1240px;
+        margin: auto;
+        gap: 2dvh;
+
+        .card {
+            box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+            background-color: $card;
+            border-radius: 2dvh;
+            overflow: hidden;
+
+            .card-img {
+
+                img {
+                    filter: brightness(50%);
+                    transition: transform .9s;
+                    width: 100%;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+
+                .card-title {
+                    font-family: 'Poppins', serif, Arial;
+                    font-weight: 600;
+                    color: $foreground;
+                    padding: 2dvh;
+                }
+
+                .card-description {
+                    color: $mutedForeground;
+                    padding: 2dvh;
+                    line-height: 1.5rem;
+                }
+
+                .list {
+                    margin-left: 5dvh;
+                    color: $healingPrimary;
+                }
+
+                .card-btn {
+                    height: 5dvh;
+                    width: 25dvh;
+                    margin-top: 2dvh;
+                    margin-bottom: 1dvh;
+                    background-color: $secondary;
+                    border: 1px solid $healingPrimary;
+                    border-radius: 1dvh;
+                    color: $primary;
+                    font-weight: 600;
+                    transition: background-color .9s, color .9s;
+                }
+
+                .card-btn:hover {
+                    background-color: $primary;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+@media (width >=1024px) {
+
+    .about {
+        display: flex;
+        flex-direction: row !important;
+        padding: 5dvh !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            h2 {
+                font-weight: 600;
+                color: $foreground;
+                padding: 2dvh;
+                font-size: 3rem !important;
+            }
+
+            span {
+                font-weight: 600;
+                color: $healingPrimary;
+            }
+
+            .resumo {
+                color: $healingPrimary;
+                padding: 2dvh;
+                line-height: 2rem;
+            }
+        }
+
+        div {
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 3dvh;
+        }
+
+        .consulta-btn {
+            width: 30dvh;
+            height: 8dvh;
+            border: none;
+            border-radius: 2dvh;
+            background: $gradientHealing;
+            color: $destructiveForeground;
+            margin-top: 2dvh;
+            transition: transform .9s;
+        }
+
+        .consulta-btn:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (width >=1024px) {
+    .location {
+        padding-bottom: 3dvh;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            max-width: 1240px;
+            margin: auto;
+
+            h2 {
+                font-weight: 600;
+                color: $foreground;
+                padding: 2dvh;
+                font-size: 3rem;
+            }
+
+            span {
+                font-weight: 600;
+                color: $healingPrimary;
+            }
+
+            p {
+                color: $mutedForeground;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+@media (width >=1024px) {
+    .footer-container {
+        display: flex;
+        flex-direction: row !important;
+        max-width: 1240px;
+        margin: auto;
+        padding-bottom: 2dvh;
+
+        .footer-logo {
+
+            h3 {
+                color: $text;
+                margin-bottom: 2dvh;
+            }
+
+            p {
+                color: $secondary;
+            }
+        }
+    }
+
+    .contact,
+    .hours {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-size: 1.5rem;
+            color: $text;
+            font-family: 'Poppins', serif, Arial;
+        }
+
+        i {
+            margin-right: 2dvh;
+        }
+
+        .phone,
+        .email,
+        .location {
+            display: flex;
+            margin: 3dvh;
+        }
+    }
+}

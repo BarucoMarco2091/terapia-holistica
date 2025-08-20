@@ -1,0 +1,28 @@
+@import '../styles/variables.scss';
+@import '../styles/responsivity.scss';
+
+footer {
+    background: $footerBackground;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                color: $text;
+                margin-bottom: 2dvh;
+            }
+
+            p {
+                color: $secondary;
+            }
+        }
+    }
+}

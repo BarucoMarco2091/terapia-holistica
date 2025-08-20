@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$background: hsl(48, 20%, 97%);
+$foreground: hsl(180, 25%, 15%);
+$card: hsl(0, 0%, 100%);
+$primary: hsl(172, 42%, 45%);
+$secondary: hsl(48, 30%, 92%);
+$mutedForeground: hsl(180, 15%, 50%);
+$accent: hsl(168, 35%, 85%);
+$destructive: hsl(0, 84.2%, 60.2%);
+$destructiveForeground: hsl(210, 40%, 98%);
+$border: hsl(168, 20%, 88%);
+$ring: hsl(172, 42%, 45%);
+$healingPrimary: hsl(172, 42%, 45%);
+$healingSecondary: hsl(168, 35%, 65%);
+$healingAccent: hsl(48, 45%, 75%);
+$healingEarth: hsl(35, 25%, 50%);
+$footerBackground: hsl(180, 25%, 15%);
+$text: hsl(48, 45%, 75%);
+$gradientHealing: linear-gradient(135deg, $healingPrimary, $healingSecondary);
+$gradient-earth:  linear-gradient(180deg, $healingAccent, $healingEarth);
+$gradient-subtle: linear-gradient(180deg, $background, $accent);
+
+// Dark theme healing colors 
+
+$darkHealingPrimary: hsl(172, 42%, 55%);
+$darkHealingSecondary: hsl(168, 35%, 45%);
+$darkHealingAccent: hsl(48, 35%, 55%);
+$darkHealingEarth: hsl(35, 25%, 50%);
+$darkGradientHealing: linear-gradient(135deg, $darkHealingPrimary, $darkHealingSecondary);
+$darkGradient-earth:  linear-gradient(180deg, $darkHealingAccent, $darkHealingEarth);
+$darkGradient-subtle: linear-gradient(180deg, $background, $accent);

@@ -1,0 +1,215 @@
+@import '../styles/variables.scss';
+@import '../styles/responsivity.scss';
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1dvh 1dvh;
+
+    .tratamentos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: $gradient-subtle;
+        padding: 5dvh;
+
+        .tratamentos-title {
+            font-size: 1.5rem;
+            color: $foreground;
+            font-weight: 600;
+            padding: 5dvh;
+        }
+
+        span {
+            color: $healingPrimary;
+        }
+
+        .tratamentos-paragraph {
+            color: $mutedForeground;
+            padding-bottom: 5dvh;
+            line-height: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .card {
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                background-color: $card;
+                border-radius: 2dvh;
+                overflow: hidden;
+                margin-bottom: 1dvh;
+
+                .card-img {
+
+                    img {
+                        filter: brightness(50%);
+                        transition: transform .9s;
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+
+                    .card-title {
+                        font-family: 'Poppins', serif, Arial;
+                        font-weight: 600;
+                        color: $foreground;
+                        padding: 2dvh;
+                    }
+
+                    .card-description {
+                        color: $mutedForeground;
+                        padding: 2dvh;
+                        line-height: 1.5rem;
+                    }
+
+                    .list {
+                        margin-left: 5dvh;
+                        color: $healingPrimary;
+                    }
+
+                    .card-btn {
+                        height: 5dvh;
+                        width: 25dvh;
+                        margin-top: 2dvh;
+                        margin-bottom: 1dvh;
+                        background-color: $secondary;
+                        border: 1px solid $healingPrimary;
+                        border-radius: 1dvh;
+                        color: $primary;
+                        font-weight: 600;
+                        transition: background-color .9s, color .9s;
+                    }
+
+                    .card-btn:hover {
+                        background-color: $primary;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        background-color: $background;
+
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            h2 {
+                font-weight: 600;
+                color: $foreground;
+                padding: 2dvh;
+                font-size: 2rem;
+            }
+
+            span {
+                font-weight: 600;
+                color: $healingPrimary;
+            }
+
+            .resumo {
+                color: $healingPrimary;
+                padding: 2dvh;
+                line-height: 2rem;
+            }
+        }
+
+        .about-img {
+            margin-right: 3dvh;
+
+            img {
+                border-radius: 2dvh;
+            }
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .card {
+                height: 15dvh;
+                width: 40dvh;
+                border: 1px solid $accent;
+                border-radius: 1dvh;
+                background-color: $card;
+                margin: 1dvh;
+
+                .card-image {
+                    width: 5dvh;
+                    height: 5dvh;
+                    object-fit: contain;
+                    padding: 1dvh;
+                    filter: brightness(50%);
+                    color: $ring;
+                }
+
+                .card-paragraph {
+                    font-weight: 600;
+                    color: $foreground;
+                }
+
+                .card-speciality {
+                    font-family: 'Poppins', serif, Arial;
+                    color: $mutedForeground;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .consulta-btn {
+            width: 30dvh;
+            height: 8dvh;
+            border: none;
+            border-radius: 2dvh;
+            background: $gradientHealing;
+            color: $destructiveForeground;
+            margin-top: 2dvh;
+            transition: transform .9s;
+        }
+
+        .consulta-btn:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: $gradient-subtle;
+
+
+        h2 {
+            font-weight: 600;
+            color: $foreground;
+            padding: 2dvh;
+        }
+
+        span {
+            font-weight: 600;
+            color: $healingPrimary;
+        }
+
+        p {
+            color: $mutedForeground;
+            line-height: 2rem;
+        }
+    }
+}
