@@ -213,6 +213,10 @@
     display: flex;
     flex-direction: column;
   }
+  .contact .contact p,
+  .hours .contact p {
+    color: hsl(48, 30%, 92%);
+  }
   .contact span,
   .hours span {
     font-size: 1.5rem;

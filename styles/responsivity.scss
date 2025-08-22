@@ -262,6 +262,13 @@
         display: flex;
         flex-direction: column;
 
+        .contact {
+
+            p {
+                color: $secondary;
+            }
+        }
+
         span {
             font-size: 1.5rem;
             color: $text;

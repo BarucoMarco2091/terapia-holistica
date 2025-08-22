@@ -24,5 +24,31 @@ footer {
                 color: $secondary;
             }
         }
+
+        .contact {
+
+            span {
+                
+                color: $text;
+                font-family: 'Poppins', serif, Arial;
+            }
+
+            p {
+                color: $secondary !important;
+            }
+        }
+
+        .hours {
+
+            span {
+                
+                color: $text;
+                font-family: 'Poppins', serif, Arial;
+            }
+
+            p {
+                color: $secondary;
+            }
+        }
     }
 }

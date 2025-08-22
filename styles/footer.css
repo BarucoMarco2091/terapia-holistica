@@ -215,6 +215,10 @@
     display: flex;
     flex-direction: column;
   }
+  .contact .contact p,
+  .hours .contact p {
+    color: hsl(48, 30%, 92%);
+  }
   .contact span,
   .hours span {
     font-size: 1.5rem;
@@ -254,5 +258,19 @@ footer .footer-container .footer-logo h3 {
   margin-bottom: 2dvh;
 }
 footer .footer-container .footer-logo p {
+  color: hsl(48, 30%, 92%);
+}
+footer .footer-container .contact span {
+  color: hsl(48, 45%, 75%);
+  font-family: "Poppins", serif, Arial;
+}
+footer .footer-container .contact p {
+  color: hsl(48, 30%, 92%) !important;
+}
+footer .footer-container .hours span {
+  color: hsl(48, 45%, 75%);
+  font-family: "Poppins", serif, Arial;
+}
+footer .footer-container .hours p {
   color: hsl(48, 30%, 92%);
 }/*# sourceMappingURL=footer.css.map */
